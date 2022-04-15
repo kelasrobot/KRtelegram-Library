@@ -1,0 +1,2 @@
+KRtelegram	    KEYWORD1
+setTelegram	    KEYWORD1
