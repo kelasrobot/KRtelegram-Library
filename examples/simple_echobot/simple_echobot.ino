@@ -11,8 +11,8 @@ void setup() {
 void loop() {
   TBMessage msg;
   if (myBot.getNewMessage(msg)) {
-    String pesan = msg.text;
-    Serial.println(pesan);
-    myBot.sendMessage(msg, pesan);
+    Serial.println(msg.chatId);
+    Serial.println(msg.text);
+    myBot.sendMessage(msg, msg.text);
   }
 }
